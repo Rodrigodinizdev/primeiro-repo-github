@@ -1,0 +1,26 @@
+$ git remote set-url origin https://github.com/Rodrigodinizdev/primeiro-repo-github.git
+
+Rodrigo@caue MINGW64 ~/Documents/Repositórios/Atividades/respostas-modulo-01/dia 2 (feat/rodrigo-diniz)
+$ touch conta-github.txt
+
+Rodrigo@caue MINGW64 ~/Documents/Repositórios/Atividades/respostas-modulo-01/dia 2 (feat/rodrigo-diniz)
+$ git remote -v
+origin  https://github.com/Rodrigodinizdev/primeiro-repo-github.git (fetch)
+origin  https://github.com/Rodrigodinizdev/primeiro-repo-github.git (push)
+
+Rodrigo@caue MINGW64 ~/Documents/Repositórios/Atividades/respostas-modulo-01/dia 2 (feat/rodrigo-diniz)
+$ git branch -M main
+
+Rodrigo@caue MINGW64 ~/Documents/Repositórios/Atividades/respostas-modulo-01/dia 2 (main)
+$ git push -u origin main
+Enumerating objects: 38, done.
+Counting objects: 100% (38/38), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (30/30), done.
+Writing objects: 100% (38/38), 7.82 KiB | 1.30 MiB/s, done.
+Total 38 (delta 0), reused 7 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Rodrigodinizdev/primeiro-repo-github.git
+ * [new branch]      main -> main
+warning: branch.main.remote has multiple values
+warning: branch.main.merge has multiple values
+branch 'main' set up to track 'origin/main'.
