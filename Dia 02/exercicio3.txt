@@ -1,0 +1,46 @@
+$ git add README.md
+
+Rodrigo@caue MINGW64 ~/meu-primeiro-repo (master)
+$ git commit -m "Adiciona README inicial do projeto"
+[master (root-commit) 4ce3768] Adiciona README inicial do projeto
+ 2 files changed, 21 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 exercicio1.txt
+
+Rodrigo@caue MINGW64 ~/meu-primeiro-repo (master)
+$ git log
+commit 4ce3768f24d14df02c29125d3016e1db806e5521 (HEAD -> master)
+Author: Rodrigo Diniz <rodrigodiniz.developer@gmail.com>
+Date:   Mon Dec 1 08:43:04 2025 -0300
+
+    Adiciona README inicial do projeto
+
+Rodrigo@caue MINGW64 ~/meu-primeiro-repo (master)
+$ git show
+commit 4ce3768f24d14df02c29125d3016e1db806e5521 (HEAD -> master)
+Author: Rodrigo Diniz <rodrigodiniz.developer@gmail.com>
+Date:   Mon Dec 1 08:43:04 2025 -0300
+
+    Adiciona README inicial do projeto
+
+diff --git a/README.md b/README.md
+new file mode 100644
+index 0000000..a90b40d
+--- /dev/null
++++ b/README.md
+
+Rodrigo@caue MINGW64 ~/meu-primeiro-repo (master)
+$ touch arquivo1.txt arquivo2.txt
+
+Rodrigo@caue MINGW64 ~/meu-primeiro-repo (master)
+$ git add arquivo1.txt arquivo2.txt
+
+Rodrigo@caue MINGW64 ~/meu-primeiro-repo (master)
+$ git commit -m "add aquivo1.txt e arquivo2.txt"
+[master 4b46c94] add aquivo1.txt e arquivo2.txt
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 arquivo1.txt
+ create mode 100644 arquivo2.txt
+
+Rodrigo@caue MINGW64 ~/meu-primeiro-repo (master)
+$ touch exercicio3.txt

@@ -1,0 +1,24 @@
+- Criei um arquivo README.md dentro do repositório executando touch README.md
+  e adicionei o texto "#meu primeiro repositório git"
+
+- Executei git status e o arquivo estava em untracked
+  Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+
+- Usei git add README.md para adicionar ao staging e executei git status novamente 
+  $ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+
+- Criei o arquivo estados-git.txt executando touch estados-git.txt
+  
+        
+
+
+  
