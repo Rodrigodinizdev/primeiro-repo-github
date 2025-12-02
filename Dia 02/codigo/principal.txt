@@ -1,3 +1,0 @@
--este é um projeto de teste 
--aprendendo git/github
--código inicial

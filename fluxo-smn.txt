@@ -1,0 +1,369 @@
+$ git checkout -b sprint
+Switched to a new branch 'sprint'
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (sprint)
+$ git checkout -b next
+Switched to a new branch 'next'
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (next)
+$ git checkout sprint
+D       Dia 02/.gitignore
+D       Dia 02/README.md
+D       Dia 02/arquivo1.txt
+D       Dia 02/arquivo2.txt
+D       Dia 02/codigo/auxiliar.txt
+D       Dia 02/codigo/principal.txt
+D       Dia 02/docs/projeto.txt
+D       Dia 02/docs/referencias.txt
+D       Dia 02/estados-git.txt
+D       Dia 02/exercicio1.txt
+D       Dia 02/exercicio3.txt
+D       Dia 02/historico-analise.txt
+D       Dia 02/resumo-final.txt
+D       Dia 02/tarefas.txt
+D       Dia 02/teste.log
+D       criado-no-github.txt
+D       "dia 01/Instala\303\247\303\243o-git"
+D       dia 01/config-git.txt
+D       dia 01/controle-versao.txt
+D       dia 01/estrutura-comandos-git.md
+D       dia 01/guia-git.md
+D       primeiro-repo/Captura de tela 2025-12-01 112735.png
+D       primeiro-repo/Captura de tela 2025-12-01 114218.png
+D       primeiro-repo/CloneMeuRepo/primeiro-repo-github
+D       primeiro-repo/MyGym
+D       primeiro-repo/Rodrigo.txt
+D       primeiro-repo/conexao-remoto.txt
+D       primeiro-repo/conta-github.txt
+D       primeiro-repo/respostas-modulo-01
+Switched to branch 'sprint'
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (sprint)
+$ touch feature/login 
+touch: cannot touch 'feature/login': No such file or directory
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (sprint)
+$ git checkout -b feature/login
+Switched to a new branch 'feature/login'
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (feature/login)
+$ touch login.txt
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (feature/login)
+$ git add login.txt
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (feature/login)
+$ git commit -m "feat/rodrigo-diniz "implementando funcionalidade"
+> ^C
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (feature/login)
+$ git commit -m "feat/rodrigo-diniz: "implementando funcionalidade"
+> ^C
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (feature/login)
+$ git commit -m "feat/rodrigo-diniz: implementando funcionalidade"
+[feature/login 7dcb948] feat/rodrigo-diniz: implementando funcionalidade
+ 1 file changed, 2 insertions(+)
+ create mode 100644 login.txt
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (feature/login)
+$ git checkout sprint
+D       Dia 02/.gitignore
+D       Dia 02/README.md
+D       Dia 02/arquivo1.txt
+D       Dia 02/arquivo2.txt
+D       Dia 02/codigo/auxiliar.txt
+D       Dia 02/codigo/principal.txt
+D       Dia 02/docs/projeto.txt
+D       Dia 02/docs/referencias.txt
+D       Dia 02/estados-git.txt
+D       Dia 02/exercicio1.txt
+D       Dia 02/exercicio3.txt
+D       Dia 02/historico-analise.txt
+D       Dia 02/resumo-final.txt
+D       Dia 02/tarefas.txt
+D       Dia 02/teste.log
+D       criado-no-github.txt
+D       "dia 01/Instala\303\247\303\243o-git"
+D       dia 01/config-git.txt
+D       dia 01/controle-versao.txt
+D       dia 01/estrutura-comandos-git.md
+D       dia 01/guia-git.md
+D       primeiro-repo/Captura de tela 2025-12-01 112735.png
+D       primeiro-repo/Captura de tela 2025-12-01 114218.png
+D       primeiro-repo/CloneMeuRepo/primeiro-repo-github
+D       primeiro-repo/MyGym
+D       primeiro-repo/Rodrigo.txt
+D       primeiro-repo/conexao-remoto.txt
+D       primeiro-repo/conta-github.txt
+D       primeiro-repo/respostas-modulo-01
+Switched to branch 'sprint'
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (sprint)
+$ git merge feature/login
+Updating 7982eb1..7dcb948
+Fast-forward
+ login.txt | 2 ++
+ 1 file changed, 2 insertions(+)
+ create mode 100644 login.txt
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (sprint)
+$ git checkout main
+D       Dia 02/.gitignore
+D       Dia 02/README.md
+D       Dia 02/arquivo1.txt
+D       Dia 02/arquivo2.txt
+D       Dia 02/codigo/auxiliar.txt
+D       Dia 02/codigo/principal.txt
+D       Dia 02/docs/projeto.txt
+D       Dia 02/docs/referencias.txt
+D       Dia 02/estados-git.txt
+D       Dia 02/exercicio1.txt
+D       Dia 02/exercicio3.txt
+D       Dia 02/historico-analise.txt
+D       Dia 02/resumo-final.txt
+D       Dia 02/tarefas.txt
+D       Dia 02/teste.log
+D       criado-no-github.txt
+D       "dia 01/Instala\303\247\303\243o-git"
+D       dia 01/config-git.txt
+D       dia 01/controle-versao.txt
+D       dia 01/estrutura-comandos-git.md
+D       dia 01/guia-git.md
+D       primeiro-repo/Captura de tela 2025-12-01 112735.png
+D       primeiro-repo/Captura de tela 2025-12-01 114218.png
+D       primeiro-repo/CloneMeuRepo/primeiro-repo-github
+D       primeiro-repo/MyGym
+D       primeiro-repo/Rodrigo.txt
+D       primeiro-repo/conexao-remoto.txt
+D       primeiro-repo/conta-github.txt
+D       primeiro-repo/respostas-modulo-01
+Switched to branch 'main'
+Your branch and 'origin/main' have diverged,
+and have 10 and 15 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (main)
+$ git merge sprint
+Updating 7982eb1..7dcb948
+Fast-forward
+ login.txt | 2 ++
+ 1 file changed, 2 insertions(+)
+ create mode 100644 login.txt
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (main)
+$ git checkout next
+D       Dia 02/.gitignore
+D       Dia 02/README.md
+D       Dia 02/arquivo1.txt
+D       Dia 02/arquivo2.txt
+D       Dia 02/codigo/auxiliar.txt
+D       Dia 02/codigo/principal.txt
+D       Dia 02/docs/projeto.txt
+D       Dia 02/docs/referencias.txt
+D       Dia 02/estados-git.txt
+D       Dia 02/exercicio1.txt
+D       Dia 02/exercicio3.txt
+D       Dia 02/historico-analise.txt
+D       Dia 02/resumo-final.txt
+D       Dia 02/tarefas.txt
+D       Dia 02/teste.log
+D       criado-no-github.txt
+D       "dia 01/Instala\303\247\303\243o-git"
+D       dia 01/config-git.txt
+D       dia 01/controle-versao.txt
+D       dia 01/estrutura-comandos-git.md
+D       dia 01/guia-git.md
+D       primeiro-repo/Captura de tela 2025-12-01 112735.png
+D       primeiro-repo/Captura de tela 2025-12-01 114218.png
+D       primeiro-repo/CloneMeuRepo/primeiro-repo-github
+D       primeiro-repo/MyGym
+D       primeiro-repo/Rodrigo.txt
+D       primeiro-repo/conexao-remoto.txt
+D       primeiro-repo/conta-github.txt
+D       primeiro-repo/respostas-modulo-01
+Switched to branch 'next'
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (next)
+$ git checkout -b feature cadastro
+fatal: 'cadastro' is not a commit and a branch 'feature' cannot be created from it
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (next)
+$ git checkout -b feature/cadastro
+Switched to a new branch 'feature/cadastro'
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (feature/cadastro)
+$ touch cadastro.txt
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (feature/cadastro)
+$ git checkout next
+D       Dia 02/.gitignore
+D       Dia 02/README.md
+D       Dia 02/arquivo1.txt
+D       Dia 02/arquivo2.txt
+D       Dia 02/codigo/auxiliar.txt
+D       Dia 02/codigo/principal.txt
+D       Dia 02/docs/projeto.txt
+D       Dia 02/docs/referencias.txt
+D       Dia 02/estados-git.txt
+D       Dia 02/exercicio1.txt
+D       Dia 02/exercicio3.txt
+D       Dia 02/historico-analise.txt
+D       Dia 02/resumo-final.txt
+D       Dia 02/tarefas.txt
+D       Dia 02/teste.log
+D       criado-no-github.txt
+D       "dia 01/Instala\303\247\303\243o-git"
+D       dia 01/config-git.txt
+D       dia 01/controle-versao.txt
+D       dia 01/estrutura-comandos-git.md
+D       dia 01/guia-git.md
+D       primeiro-repo/Captura de tela 2025-12-01 112735.png
+D       primeiro-repo/Captura de tela 2025-12-01 114218.png
+D       primeiro-repo/CloneMeuRepo/primeiro-repo-github
+D       primeiro-repo/MyGym
+D       primeiro-repo/Rodrigo.txt
+D       primeiro-repo/conexao-remoto.txt
+D       primeiro-repo/conta-github.txt
+D       primeiro-repo/respostas-modulo-01
+Switched to branch 'next'
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (next)
+$ git merge feature/cadastro
+Already up to date.
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (next)
+$ git checkout feature/cadastro
+D       Dia 02/.gitignore
+D       Dia 02/README.md
+D       Dia 02/arquivo1.txt
+D       Dia 02/arquivo2.txt
+D       Dia 02/codigo/auxiliar.txt
+D       Dia 02/codigo/principal.txt
+D       Dia 02/docs/projeto.txt
+D       Dia 02/docs/referencias.txt
+D       Dia 02/estados-git.txt
+D       Dia 02/exercicio1.txt
+D       Dia 02/exercicio3.txt
+D       Dia 02/historico-analise.txt
+D       Dia 02/resumo-final.txt
+D       Dia 02/tarefas.txt
+D       Dia 02/teste.log
+D       criado-no-github.txt
+D       "dia 01/Instala\303\247\303\243o-git"
+D       dia 01/config-git.txt
+D       dia 01/controle-versao.txt
+D       dia 01/estrutura-comandos-git.md
+D       dia 01/guia-git.md
+D       primeiro-repo/Captura de tela 2025-12-01 112735.png
+D       primeiro-repo/Captura de tela 2025-12-01 114218.png
+D       primeiro-repo/CloneMeuRepo/primeiro-repo-github
+D       primeiro-repo/MyGym
+D       primeiro-repo/Rodrigo.txt
+D       primeiro-repo/conexao-remoto.txt
+D       primeiro-repo/conta-github.txt
+D       primeiro-repo/respostas-modulo-01
+Switched to branch 'feature/cadastro'
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (feature/cadastro)
+$ git add cadastro.txt
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (feature/cadastro)
+$ git commit -m "feat/rodrigo-diniz: desenvolver cadastro"
+[feature/cadastro fcd97d0] feat/rodrigo-diniz: desenvolver cadastro
+ 1 file changed, 1 insertion(+)
+ create mode 100644 cadastro.txt
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (feature/cadastro)
+$ git checkout next
+D       Dia 02/.gitignore
+D       Dia 02/README.md
+D       Dia 02/arquivo1.txt
+D       Dia 02/arquivo2.txt
+D       Dia 02/codigo/auxiliar.txt
+D       Dia 02/codigo/principal.txt
+D       Dia 02/docs/projeto.txt
+D       Dia 02/docs/referencias.txt
+D       Dia 02/estados-git.txt
+D       Dia 02/exercicio1.txt
+D       Dia 02/exercicio3.txt
+D       Dia 02/historico-analise.txt
+D       Dia 02/resumo-final.txt
+D       Dia 02/tarefas.txt
+D       Dia 02/teste.log
+D       criado-no-github.txt
+D       "dia 01/Instala\303\247\303\243o-git"
+D       dia 01/config-git.txt
+D       dia 01/controle-versao.txt
+D       dia 01/estrutura-comandos-git.md
+D       dia 01/guia-git.md
+D       primeiro-repo/Captura de tela 2025-12-01 112735.png
+D       primeiro-repo/Captura de tela 2025-12-01 114218.png
+D       primeiro-repo/CloneMeuRepo/primeiro-repo-github
+D       primeiro-repo/MyGym
+D       primeiro-repo/Rodrigo.txt
+D       primeiro-repo/conexao-remoto.txt
+D       primeiro-repo/conta-github.txt
+D       primeiro-repo/respostas-modulo-01
+Switched to branch 'next'
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (next)
+$ git merge feature/cadastro
+Updating 7982eb1..fcd97d0
+Fast-forward
+ cadastro.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 cadastro.txt
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (next)
+$ git log --oneline --graph
+* fcd97d0 (HEAD -> next, feature/cadastro) feat/rodrigo-diniz: desenvolver cadastro
+* 7982eb1 (feature/calculadora) feat/rodrigo-diniz: add calculadora
+* 480e2be feat/rodrigo-diniz: add menu
+* c55c7c3 Update README.md
+* fc4ef4d Adiciona arquivo criado no GitHub
+* 79578d2 feat/rodrigo-diniz: add rodrigo
+* 1b2341f feat/rodrigo-diniz: respostas das atividades do dia 02
+* 2722188 feat/rodrigo-diniz: Respostas das atividades dia 01
+* c4121cb feat/rodrigo-diniz:respostas atividade dia 01
+* c1b0141 docs: update README.md with repository description
+* f05915f Initial commit
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (next)
+$ git checkout main
+D       Dia 02/.gitignore
+D       Dia 02/README.md
+D       Dia 02/arquivo1.txt
+D       Dia 02/arquivo2.txt
+D       Dia 02/codigo/auxiliar.txt
+D       Dia 02/codigo/principal.txt
+D       Dia 02/docs/projeto.txt
+D       Dia 02/docs/referencias.txt
+D       Dia 02/estados-git.txt
+D       Dia 02/exercicio1.txt
+D       Dia 02/exercicio3.txt
+D       Dia 02/historico-analise.txt
+D       Dia 02/resumo-final.txt
+D       Dia 02/tarefas.txt
+D       Dia 02/teste.log
+D       criado-no-github.txt
+D       "dia 01/Instala\303\247\303\243o-git"
+D       dia 01/config-git.txt
+D       dia 01/controle-versao.txt
+D       dia 01/estrutura-comandos-git.md
+D       dia 01/guia-git.md
+D       primeiro-repo/Captura de tela 2025-12-01 112735.png
+D       primeiro-repo/Captura de tela 2025-12-01 114218.png
+D       primeiro-repo/CloneMeuRepo/primeiro-repo-github
+D       primeiro-repo/MyGym
+D       primeiro-repo/Rodrigo.txt
+D       primeiro-repo/conexao-remoto.txt
+D       primeiro-repo/conta-github.txt
+D       primeiro-repo/respostas-modulo-01
+Switched to branch 'main'
+Your branch and 'origin/main' have diverged,
+and have 11 and 15 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (main)
+$ touch fluxo-smn.txt

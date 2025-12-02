@@ -1,0 +1,313 @@
+$ touch fluxo-smn.txt
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (main)
+$ git checkout -b feature/readme-update
+Switched to a new branch 'feature/readme-update'
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (feature/readme-update)
+$ git add README.md 
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (feature/readme-update)
+$ git commit -m "feat/rodrigo-diniz: melhorias README.md"
+[feature/readme-update f60c33b] feat/rodrigo-diniz: melhorias README.md
+ 1 file changed, 1 insertion(+)
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (feature/readme-update)
+$ git push 
+fatal: The current branch feature/readme-update has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin feature/readme-update
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (feature/readme-update)
+$ git push origin feature/readme-update
+Enumerating objects: 64, done.
+Counting objects: 100% (64/64), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (48/48), done.
+Writing objects: 100% (64/64), 374.63 KiB | 46.83 MiB/s, done.
+Total 64 (delta 9), reused 50 (delta 3), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (9/9), done.
+remote:
+remote: Create a pull request for 'feature/readme-update' on GitHub by visiting:
+remote:      https://github.com/Rodrigodinizdev/primeiro-repo-github/pull/new/feature/readme-update
+remote:
+To https://github.com/Rodrigodinizdev/primeiro-repo-github.git
+ * [new branch]      feature/readme-update -> feature/readme-update
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (feature/readme-update)
+$ git diff
+diff --git a/Dia 02/.gitignore b/Dia 02/.gitignore
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/Dia 02/README.md b/Dia 02/README.md
+deleted file mode 100644
+index a90b40d..0000000
+--- a/Dia 02/README.md
++++ /dev/null
+@@ -1 +0,0 @@
+- # Meu Primeiro Repositório Git
+\ No newline at end of file
+diff --git a/Dia 02/arquivo1.txt b/Dia 02/arquivo1.txt
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/Dia 02/arquivo2.txt b/Dia 02/arquivo2.txt
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/Dia 02/codigo/auxiliar.txt b/Dia 02/codigo/auxiliar.txt
+deleted file mode 100644
+index e084152..0000000
+--- a/Dia 02/codigo/auxiliar.txt
++++ /dev/null
+@@ -1,3 +0,0 @@
+-este é um projeto de teste
+-aprendendo git/github
+-código inicial
+\ No newline at end of file
+diff --git a/Dia 02/codigo/principal.txt b/Dia 02/codigo/principal.txt
+deleted file mode 100644
+index 3855c9d..0000000
+--- a/Dia 02/codigo/principal.txt
++++ /dev/null
+@@ -1,3 +0,0 @@
+--este é um projeto de teste
+--aprendendo git/github
+--código inicial
+\ No newline at end of file
+diff --git a/Dia 02/docs/projeto.txt b/Dia 02/docs/projeto.txt
+deleted file mode 100644
+index 45a322e..0000000
+--- a/Dia 02/docs/projeto.txt
++++ /dev/null
+@@ -1,3 +0,0 @@
+--este é um projeto de teste
+--aprendendo git/github
+--documentação inicial
+\ No newline at end of file
+diff --git a/Dia 02/docs/referencias.txt b/Dia 02/docs/referencias.txt
+deleted file mode 100644
+index 93d4969..0000000
+--- a/Dia 02/docs/referencias.txt
++++ /dev/null
+@@ -1,3 +0,0 @@
+-este é um projeto de teste
+-aprendendo git/github
+-documentação inicial
+\ No newline at end of file
+diff --git a/Dia 02/estados-git.txt b/Dia 02/estados-git.txt
+deleted file mode 100644
+index d806661..0000000
+--- a/Dia 02/estados-git.txt
++++ /dev/null
+@@ -1,24 +0,0 @@
+-- Criei um arquivo README.md dentro do repositório executando touch README.md
+-  e adicionei o texto "#meu primeiro repositório git"
+-
+-- Executei git status e o arquivo estava em untracked
+-  Untracked files:
+-  (use "git add <file>..." to include in what will be committed)
+-        README.md
+-
+-- Usei git add README.md para adicionar ao staging e executei git status novamente
+-  $ git status
+-On branch master
+-
+-No commits yet
+-
+-Changes to be committed:
+-  (use "git rm --cached <file>..." to unstage)
+-        new file:   README.md
+-
+-- Criei o arquivo estados-git.txt executando touch estados-git.txt
+-
+-
+-
+-
+-
+diff --git a/Dia 02/exercicio1.txt b/Dia 02/exercicio1.txt
+deleted file mode 100644
+index 04529cd..0000000
+--- a/Dia 02/exercicio1.txt
++++ /dev/null
+@@ -1,20 +0,0 @@
+- comandos exercício 1 dia 02
+-
+- - Usei mkdir meu-primeiro-repo para criar o repositório
+-
+- - Entrei na pasta executando cd meu-primeiro-repo
+-
+- - Inicializei o repositório com git init
+-
+- - Verifiquei se a pasta .git foi criada executando ls-a
+-   retornou ./ ../ .git/
+-
+- - Executei git status para ver o estado inicial
+-   $ git status
+-   On branch master
+-
+-   No commits yet
+-
+-   nothing to commit (create/copy files and use "git add" to track)
+-
+- - Criei a pasta exercicio1.txt executando touch exercicio1.txt
+diff --git a/Dia 02/exercicio3.txt b/Dia 02/exercicio3.txt
+deleted file mode 100644
+index 8e386d1..0000000
+--- a/Dia 02/exercicio3.txt
++++ /dev/null
+@@ -1,46 +0,0 @@
+-$ git add README.md
+-
+-Rodrigo@caue MINGW64 ~/meu-primeiro-repo (master)
+-$ git commit -m "Adiciona README inicial do projeto"
+-[master (root-commit) 4ce3768] Adiciona README inicial do projeto
+- 2 files changed, 21 insertions(+)
+- create mode 100644 README.md
+- create mode 100644 exercicio1.txt
+-
+-Rodrigo@caue MINGW64 ~/meu-primeiro-repo (master)
+-$ git log
+-commit 4ce3768f24d14df02c29125d3016e1db806e5521 (HEAD -> master)
+-Author: Rodrigo Diniz <rodrigodiniz.developer@gmail.com>
+-Date:   Mon Dec 1 08:43:04 2025 -0300
+-
+-    Adiciona README inicial do projeto
+-
+-Rodrigo@caue MINGW64 ~/meu-primeiro-repo (master)
+-$ git show
+-commit 4ce3768f24d14df02c29125d3016e1db806e5521 (HEAD -> master)
+-Author: Rodrigo Diniz <rodrigodiniz.developer@gmail.com>
+-Date:   Mon Dec 1 08:43:04 2025 -0300
+-
+-    Adiciona README inicial do projeto
+-
+-diff --git a/README.md b/README.md
+-new file mode 100644
+-index 0000000..a90b40d
+---- /dev/null
+-+++ b/README.md
+-
+-Rodrigo@caue MINGW64 ~/meu-primeiro-repo (master)
+-$ touch arquivo1.txt arquivo2.txt
+-
+-Rodrigo@caue MINGW64 ~/meu-primeiro-repo (master)
+-$ git add arquivo1.txt arquivo2.txt
+-
+-Rodrigo@caue MINGW64 ~/meu-primeiro-repo (master)
+-$ git commit -m "add aquivo1.txt e arquivo2.txt"
+-[master 4b46c94] add aquivo1.txt e arquivo2.txt
+- 2 files changed, 0 insertions(+), 0 deletions(-)
+- create mode 100644 arquivo1.txt
+- create mode 100644 arquivo2.txt
+-
+-Rodrigo@caue MINGW64 ~/meu-primeiro-repo (master)
+-$ touch exercicio3.txt
+diff --git a/Dia 02/historico-analise.txt b/Dia 02/historico-analise.txt
+deleted file mode 100644
+index c02f15d..0000000
+--- a/Dia 02/historico-analise.txt
++++ /dev/null
+@@ -1,23 +0,0 @@
+-1. git log
+-Mostra o histórico completo de commits com detalhes completos.
+-Inclui: autor, data, hash completo, mensagem do commit e possível diffs.
+-É útil quando queremos analisar profundamente o histórico.
+-
+-2. git log --oneline
+-Mostra o histórico de forma resumida:
+-apenas o hash reduzido
+-mensagem do commit
+-É ideal para ter uma visão rápida e compacta dos commits, especialmente quando o repositório tem muito histórico.
+-
+-3. git log --oneline --graph
+-Mostra o mesmo resumo do --oneline, porém com um gráfico ASCII representando a estrutura dos branches.
+-É muito útil para visualizar merges, bifurcações e o fluxo do desenvolvimento.
+-
+-4. git log -n 2
+-Exibe apenas os dois commits mais recentes.
+-Pode-se usar outros números também (-n 5, -n 10).
+-Perfeito quando você quer verificar apenas o que foi feito recentemente.
+-
+-5. git log --author="Seu Nome"
+-Filtra o log para mostrar apenas commits feitos por um autor específico.
+-Útil para pesquisar seu próprio histórico ou o de alguém da equipe.
+\ No newline at end of file
+diff --git a/Dia 02/resumo-final.txt b/Dia 02/resumo-final.txt
+deleted file mode 100644
+index eb00d54..0000000
+--- a/Dia 02/resumo-final.txt
++++ /dev/null
+@@ -1,42 +0,0 @@
+-Total de commits feitos
+-
+-4 commits
+-
+-Adiciona documentação do projeto
+-
+-Adiciona arquivos de código
+-
+-Atualiza documentação e código principal
+-
+-Adiciona .gitignore
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (feature/readme-update)
+$ git add README.md
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (feature/readme-update)
+$ git commit -m "feat/rodrigo-diniz: mudanças solicitadas no pr"
+[feature/readme-update df47313] feat/rodrigo-diniz: mudanças solicitadas no pr
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (feature/readme-update)
+$ git checkout main
+D       Dia 02/.gitignore
+D       Dia 02/README.md
+D       Dia 02/arquivo1.txt
+D       Dia 02/arquivo2.txt
+D       Dia 02/codigo/auxiliar.txt
+D       Dia 02/codigo/principal.txt
+D       Dia 02/docs/projeto.txt
+D       Dia 02/docs/referencias.txt
+D       Dia 02/estados-git.txt
+D       Dia 02/exercicio1.txt
+D       Dia 02/exercicio3.txt
+D       Dia 02/historico-analise.txt
+D       Dia 02/resumo-final.txt
+D       Dia 02/tarefas.txt
+D       Dia 02/teste.log
+D       criado-no-github.txt
+D       "dia 01/Instala\303\247\303\243o-git"
+D       dia 01/config-git.txt
+D       dia 01/controle-versao.txt
+D       dia 01/estrutura-comandos-git.md
+D       dia 01/guia-git.md
+D       primeiro-repo/Captura de tela 2025-12-01 112735.png
+D       primeiro-repo/Captura de tela 2025-12-01 114218.png
+D       primeiro-repo/CloneMeuRepo/primeiro-repo-github
+D       primeiro-repo/MyGym
+D       primeiro-repo/Rodrigo.txt
+D       primeiro-repo/conexao-remoto.txt
+D       primeiro-repo/conta-github.txt
+D       primeiro-repo/respostas-modulo-01
+Switched to branch 'main'
+Your branch and 'origin/main' have diverged,
+and have 11 and 15 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (main)
+$ git merge feature/readme-update
+Updating 7dcb948..df47313
+Fast-forward
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (main)
+$ git branch -d feature/readme-update
+Deleted branch feature/readme-update (was df47313).
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (main)
+$ touch pull-request-test.txt

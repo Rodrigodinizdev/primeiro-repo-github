@@ -1,0 +1,128 @@
+$ git checkout main
+D       Dia 02/.gitignore
+D       Dia 02/README.md
+D       Dia 02/arquivo1.txt
+D       Dia 02/arquivo2.txt
+D       Dia 02/codigo/auxiliar.txt
+D       Dia 02/codigo/principal.txt
+D       Dia 02/docs/projeto.txt
+D       Dia 02/docs/referencias.txt
+D       Dia 02/estados-git.txt
+D       Dia 02/exercicio1.txt
+D       Dia 02/exercicio3.txt
+D       Dia 02/historico-analise.txt
+D       Dia 02/resumo-final.txt
+D       Dia 02/tarefas.txt
+D       Dia 02/teste.log
+D       criado-no-github.txt
+D       "dia 01/Instala\303\247\303\243o-git"
+D       dia 01/config-git.txt
+D       dia 01/controle-versao.txt
+D       dia 01/estrutura-comandos-git.md
+D       dia 01/guia-git.md
+D       primeiro-repo/Captura de tela 2025-12-01 112735.png
+D       primeiro-repo/Captura de tela 2025-12-01 114218.png
+D       primeiro-repo/CloneMeuRepo/primeiro-repo-github
+D       primeiro-repo/MyGym
+D       primeiro-repo/Rodrigo.txt
+D       primeiro-repo/conexao-remoto.txt
+D       primeiro-repo/conta-github.txt
+D       primeiro-repo/respostas-modulo-01
+Switched to branch 'main'
+Your branch and 'origin/main' have diverged,
+and have 8 and 15 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (main)
+$ git merge feature/menu
+Updating c55c7c3..480e2be
+Fast-forward
+ README.md | 2 +-
+ menu.txt  | 4 ++++
+ 2 files changed, 5 insertions(+), 1 deletion(-)
+ create mode 100644 menu.txt
+# Entrei na main e fiz merge com a branch utilizando comandos git checkout
+  e git merge #
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (main)
+$ git log --oneline --graph
+* 480e2be (HEAD -> main, feature/menu) feat/rodrigo-diniz: add menu
+* c55c7c3 Update README.md
+* fc4ef4d Adiciona arquivo criado no GitHub
+* 79578d2 feat/rodrigo-diniz: add rodrigo
+* 1b2341f feat/rodrigo-diniz: respostas das atividades do dia 02
+* 2722188 feat/rodrigo-diniz: Respostas das atividades dia 01
+* c4121cb feat/rodrigo-diniz:respostas atividade dia 01
+* c1b0141 docs: update README.md with repository description
+* f05915f Initial commit
+# Checando as alterações #
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (main)
+$ git branch -d feature/menu
+Deleted branch feature/menu (was 480e2be).
+# Excluindo a branch com o comando git branch -d #
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (main)
+$ git checkout -b feature/calculadora
+Switched to a new branch 'feature/calculadora'
+# criei uma nova branch com o comando git checkout -b #
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (feature/calculadora)
+$ touch calc.txt
+# criei um txt com comando touch #
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (feature/calculadora)
+$ git add calc.txt
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (feature/calculadora)
+$ git commit -m "feat/rodrigo-diniz: add calculadora"
+[feature/calculadora 7982eb1] feat/rodrigo-diniz: add calculadora
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 calc.txt
+ # Adicionei e commitei calc.txt #
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (feature/calculadora)
+$ git checkout main
+D       Dia 02/.gitignore
+D       Dia 02/README.md
+D       Dia 02/arquivo1.txt
+D       Dia 02/arquivo2.txt
+D       Dia 02/codigo/auxiliar.txt
+D       Dia 02/codigo/principal.txt
+D       Dia 02/docs/projeto.txt
+D       Dia 02/docs/referencias.txt
+D       Dia 02/estados-git.txt
+D       Dia 02/exercicio1.txt
+D       Dia 02/exercicio3.txt
+D       Dia 02/historico-analise.txt
+D       Dia 02/resumo-final.txt
+D       Dia 02/tarefas.txt
+D       Dia 02/teste.log
+D       criado-no-github.txt
+D       "dia 01/Instala\303\247\303\243o-git"
+D       dia 01/config-git.txt
+D       dia 01/controle-versao.txt
+D       dia 01/estrutura-comandos-git.md
+D       dia 01/guia-git.md
+D       primeiro-repo/Captura de tela 2025-12-01 112735.png
+D       primeiro-repo/Captura de tela 2025-12-01 114218.png
+D       primeiro-repo/CloneMeuRepo/primeiro-repo-github
+D       primeiro-repo/MyGym
+D       primeiro-repo/Rodrigo.txt
+D       primeiro-repo/conexao-remoto.txt
+D       primeiro-repo/conta-github.txt
+D       primeiro-repo/respostas-modulo-01
+Switched to branch 'main'
+Your branch and 'origin/main' have diverged,
+and have 9 and 15 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+Rodrigo@caue MINGW64 ~/documents/Rodrigo/primeiro-repo-github (main)
+$ git merge feature/calculadora
+Updating 480e2be..7982eb1
+Fast-forward
+ calc.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 calc.txt
+
+ # Dei checkout para main e dei merge para add a calc. #

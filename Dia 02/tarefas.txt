@@ -1,5 +1,0 @@
-Estudar git (concluído)
-Aprender github
-fazer commits
-executar git log
-executar git status
