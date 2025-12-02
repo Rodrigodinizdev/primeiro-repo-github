@@ -2,7 +2,7 @@
 
 Este repositório é destinado exclusivamente para colher as respostas de exercícios provenientes de outro repositório.
 
-## Contaaaaa
+## Conta
 
 As respostas coletadas neste repositório são referentes aos estudos de:
 
